@@ -1,0 +1,311 @@
+/*====================
+=======Structure======
+======================*/
+
+header{
+   
+}
+
+main{
+   
+}
+
+/*====================
+========Columns=======
+======================*/
+
+.desktop-one-column{
+    width: 100%;
+}
+
+.desktop-one-column .column{
+    width: 100%;
+}
+
+.desktop-two-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns .column{
+    width: 48%;
+}
+
+.desktop-two-columns-aside{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-aside .column-aside{
+    width: 30%;
+}
+
+.desktop-two-columns-aside .column-main{
+    width: 65%;
+}
+
+.desktop-two-columns-inline{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-inline .column{
+    width: 48%;
+}
+
+.desktop-two-columns-inline .column div{
+    display: flex;
+    margin-right: 1em;
+}
+
+.desktop-three-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-three-columns .column{
+    width: 30%;
+}
+
+.desktop-four-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-four-columns .column{
+    width: 22%;
+}
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(0, 0%, 0%);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto";
+}
+
+h5, h6 {
+    font-family: "Roboto Condensed";
+}
+
+a, td, p, button, span, li{
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+/*====================
+========Image=========
+======================*/
+
+img {
+    max-width: 100%;
+}
+
+
+/*====================
+=======Header=========
+======================*/
+
+.header-top{
+    background-color: hsl(0, 0%, 90%);
+    padding: 0.5rem 5%;
+    width: 90%;
+}
+
+.header-top-featured-news{
+    width: 80%;
+}
+
+/* Display flex y justify content siempre tienen que ir juntos */
+.header-top-featured-news ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-featured-news ul li{
+    font-size: 0.8rem;
+}
+
+.header-top-featured-news ul li:not(:first-child):not(:last-child)::after {
+    padding-left: 0.25rem;
+    content: "-";
+}
+
+.header-top-featured-news ul li:first-child{
+    color: hsl(0, 100%, 40%);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header-top-editions{
+    margin-left: auto;
+    width: 45%
+}
+
+.header-top-editions ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-top-editions ul li{
+    font-size: 0.8rem;
+}
+/*:not */
+.header-top-editions ul li:not(:last-child)::after {
+    content: "|";
+    padding-left: .5rem;
+    color: #aaa;
+    font-weight: bold;
+}
+
+/*Padding: Espacio enttre el contenido del elemento y su borde.
+Atajo para evitar la asignación de cada lado.
+1r valor: Arriba y abajo, 2do valor:izquierda-derecha.*/
+.header-main{
+    background-color: #cd0000;
+    padding: 1rem 5%;
+    width: 90%;
+}
+
+.header-main-menu-button svg{
+    width: 3rem;
+}
+/*
+Fill desciende de Path
+*/
+.header-main-menu-button svg path{
+    fill:hsl(0, 0%, 100%);
+}
+
+.header-main-logo svg{
+    width: 20rem;
+}
+
+.header-main-logo svg path{
+    
+    fill:hsl(0, 0%, 100%);
+}
+
+
+/*La capa madre contiene los valores que se reflejaran en las subcapas.
+
+*Widht indica el porcentaje utilizado sobre el ancho total de la capa
+independientemente d elas cajas hermanas que existan.
+
+*Flex indica la capacidad que tiene un elemto para alterar sus dimensones y llenar un espacio disponible.
+Es preferible aplicar la escala rem.
+
+
+*Margin: margen a los cuatro lados.
+ 
+lenght:ancho fijo/percentage/auto:reemplaza algun valor.
+*/
+
+.header-main-users{
+    display:flex;
+    justify-content:space-between;
+    width: 80%;
+    margin-left: auto;
+}
+
+.header-main-users-button-login button {
+    background-color: #dae0e5;
+    border: none;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 0.8rem;
+}
+
+.header-main-users-button-login button span{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 0.5rem;
+}
+
+.header-main-users-button-login button svg{
+    vertical-align: middle;
+    width: 1.5rem;
+}
+
+.header-main-users-button-signin button{
+    border:none;
+    background-color: #ffc700;
+    border-radius: 0.25rem;
+    font-family: "Times New Roman",Times,serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+}
+
+.header-menu{
+    border-bottom: solid 0.2rem #ccc;
+    background-color: #e6e6e6;
+    padding: 0.5rem 5%;
+    width: 90%; 
+}
+
+.header-menu ul{
+    align-items: center;
+    display:flex;
+    justify-content: space-between;
+}
+
+.header-menu ul li{
+    align-items: center;
+
+}
+
+.header-menu ul li a{
+    font-weight: 600;
+}
+
+.header-menu ul li:first-child svg{
+    width: 1.5rem;
+}
+
+.header-menu ul li:first-child svg path{
+    fill: #323232;
+}
+
+.header-menu ul li:last-child svg{    
+    width: 1rem;
+}
+
+.header-menu ul li:last-child svg path{  
+    fill: #323232;
+}
+
+
+/*====================
+=======Ads===========
+======================*/
+
+.banner{
+
+}
+
+/*====================
+=======News=========
+======================*/
+
+.home{
+
+}
+
+
+
+    
+}
+
+
